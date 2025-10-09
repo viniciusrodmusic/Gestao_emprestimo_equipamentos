@@ -1,0 +1,18 @@
+[
+  {
+    "nome": "Pedro",
+    "email": "pedro@gmail.com",
+    "equipamento": "Pc",
+    "data_emprestimo": "17/06/2025",
+    "data_devolucao": "17/07/2025",
+    "pendencia": false
+  },
+  {
+    "nome": "Joao",
+    "email": "joao@gmail.com",
+    "equipamento": "Notebook",
+    "data_emprestimo": "13/04/2025",
+    "data_devolucao": "13/05/2025",
+    "pendencia": true
+  }
+]
