@@ -8,14 +8,14 @@ o sistema deve cadastrar
     equipamento, 
     alunos, 
     data de empréstimo,
-    devolução (pegar detalhes)
+    devolução
 
 impedir empréstimo de alunos que tenham pendências (quando não devolveu o equipamento dentro da data de devolução)
 
 gerar relatório dos empréstimos ativos
 listar empréstimos ativos
 
-deve salvar em txt o json
+deve salvar em txt ou json
 """
 
 from datetime import datetime, timedelta
@@ -113,22 +113,23 @@ def database(aluno, lista_temp):
                 with open("bd.json", "w", encoding="UTF-8") as file_w:
                     dump(dados_temp, file_w, indent=2)
 
-        
-            print("===TRY===")
     except:
          with open("bd.json", "w", encoding="UTF-8") as file_w:
             dump(aluno, file_w, indent=2)
-            print("===EXCEPT===")
+           
     
 
 
 
 def ver_relatorio():
+    print("=== EMPRÉSTIMOS ATIVOS: ===")
     with open("log_emprestimos_ativos.txt", "r") as file:
-        for linha in file:
-            status = ''.join(padrao_status_pendencia.findall(linha))
-            if status == "STATUS_PENDENCIA: True":
-                print(linha)
+        if file:
+            for linha in file:
+                status = ''.join(padrao_status_pendencia.findall(linha))
+                if status == "STATUS_PENDENCIA: True":
+                    print(linha)
+                    
 
 
 

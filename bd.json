@@ -13,6 +13,14 @@
     "equipamento": "Notebook",
     "data_emprestimo": "13/04/2025",
     "data_devolucao": "13/05/2025",
-    "pendencia": true
+    "pendencia": false
+  },
+  {
+    "nome": "Jo\u00e3o",
+    "email": "joao@gmail.com",
+    "equipamento": "Computador",
+    "data_emprestimo": "17/05/2025",
+    "data_devolucao": "16/06/2025",
+    "pendencia": false
   }
 ]

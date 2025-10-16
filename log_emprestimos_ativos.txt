@@ -1,2 +1,1 @@
-pedro | 'pedro@gmail.com' - STATUS_PENDENCIA: False
-joao | 'joao@gmail.com' - STATUS_PENDENCIA: True
+JoÃ£o | 'joao@gmail.com' - STATUS_PENDENCIA: False
